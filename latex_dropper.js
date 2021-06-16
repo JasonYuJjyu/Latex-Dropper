@@ -4,8 +4,16 @@ var filename = '';
 
 
 function convert(){
+	// get font size
+	let font_size = document.getElementById('font_size_input').value;
+	document.getElementById('svg_ouput').style.fontSize = font_size+'px';
+
+	// get colour
+	let colour = document.getElementById('colour_input').value;
+
 	// convert tex to raw svg
-	tex_string = document.getElementById('tex_input').value;
+	let tex_string = '\\color{'+colour+'}';
+	tex_string += document.getElementById('tex_input').value;
 	latex_svg = MathJax.tex2svg(tex_string);
 	extracted_svg = latex_svg.getElementsByTagName('svg')[0].outerHTML
 

@@ -1,6 +1,6 @@
 // Mathjax config
 window.MathJax = {
-	loader: {load: ["input/tex-base", "output/svg", "[tex]/colorv2"]},
+	loader: {load: ["input/tex-base", "output/svg", "[tex]/color"]},
 	tex: {
 		packages: ['base','ams','boldsymbol','color'],
 		inlineMath: [['$', '$'], ['\\(', '\\)']]

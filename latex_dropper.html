@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
 	<title>Latex Dropper</title>
-	<script src="jsPDF/dist/jspdf.umd.min.js"></script>
-	<script src="svg2pdf.js/dist/svg2pdf.umd.min.js"></script>
-	<script src="mathjax_config.js"></script>
-	<script src="MathJax/es5/tex-svg.js"></script>
-	<script src="latex_dropper.js"></script>
+	<script src='jsPDF/dist/jspdf.umd.min.js'></script>
+	<script src='svg2pdf.js/dist/svg2pdf.umd.min.js'></script>
+	<script src='mathjax_config.js'></script>
+	<script src='MathJax/es5/tex-svg.js'></script>
+	<script src='latex_dropper.js'></script>
 
 	<style>
 		#tex_input{
@@ -22,8 +22,12 @@
 </head>
 
 <body>
-	<textarea id="tex_input" rows="8" cols="100">\int_\infty \frac{\ln(x)}{\ln(y)}</textarea>
-	<button id="convert_button" onclick="convert()">Convert</button>
-	<div draggable="true" id="svg_ouput"></div>
+	<textarea id='tex_input' rows='8' cols='100'>\int_\infty \frac{\ln(x)}{\ln(y)}</textarea>
+	<div id='extra_options'>
+		Colour: <input id='colour_input' value='#000000'>
+		Font-size: <input id='font_size_input' value='32'>px
+	</div>
+	<button id='convert_button' onclick='convert()'>Convert</button>
+	<div draggable='true' id='svg_ouput' style='font-size:32pt;background:grey;'></div>
 </body>
 </html>
