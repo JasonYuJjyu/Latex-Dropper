@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Latex Dropper</title>
+	<script src="jsPDF/dist/jspdf.umd.min.js"></script>
+	<script src="svg2pdf.js/dist/svg2pdf.umd.min.js"></script>
+	<script src="mathjax_config.js"></script>
+	<script src="MathJax/es5/tex-svg.js"></script>
+	<script src="latex_dropper.js"></script>
+
+	<style>
+		#tex_input{
+			width:100%;
+		}
+		#convert_button{
+			width: 100%;
+			height: 3em;
+		}
+	</style>
+</head>
+
+<body>
+	<textarea id="tex_input" rows="8" cols="100">\int_\infty \frac{\ln(x)}{\ln(y)}</textarea>
+	<button id="convert_button" onclick="convert()">Convert</button>
+	<div draggable="true" id="svg_ouput"></div>
+</body>
+</html>
