@@ -1,9 +1,9 @@
 [submodule "MathJax"]
 	path = MathJax
-	url = git@github.com:mathjax/MathJax.git
+	url = https://github.com/mathjax/MathJax.git
 [submodule "svg2pdf.js"]
 	path = svg2pdf.js
-	url = git@github.com:yWorks/svg2pdf.js.git
+	url = https://github.com/yWorks/svg2pdf.js.git
 [submodule "jsPDF"]
 	path = jsPDF
-	url = git@github.com:MrRio/jsPDF.git
+	url = https://github.com/MrRio/jsPDF.git
