@@ -8,6 +8,8 @@ Like a browser based version of LaTeXiT.
 
 Note: Only tested on Chrome. Drag and drop does not work on Safari.
 
+Accessible [here](https://jasonyujjyu.github.io/Latex-Dropper/).
+
 Usage Instructions
 -------------
 1. Type tex into box
